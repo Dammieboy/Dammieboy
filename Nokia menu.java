@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Noki5510{
+public class Nokia5510{
 public static void main(String[] args){
 Scanner input=new Scanner(System.in);
 System.out.println("------MENU FUNCTIONS------\n 1.Phone Book\n 2.Messages\n 3.Chat\n 4.Call Register\n 5.Tones\n 6.Settings\n 7.Call Divert\n 8.Music\n 9.Games\n 10.Calculator\n 11.Reminder\n 12.Clock\n 13.Profile\n 14.Services\n 15.Sim Services\n");
@@ -25,7 +25,7 @@ switch(choice){
     break;
     case 7: System.out.println("Tone Assigned"); 
     break;
-    case 8: System.out.println("b card sent"); 
+    case 8: System.out.println("card sent"); 
     break;
     case 9: 
       System.out.println("---Options Menu---\n 1.Memory in use\n 2.Type of View\n 3.Memory Status\n");
@@ -72,49 +72,62 @@ int messageschoice = input.nextInt();
     break;
     case 6: System.out.print("Smiley Sent");
     break;
-    case 7: 
-    System.out.print("---Messages Settings---\n 1.Set 1\n 2.Common Setting");
-    System.out.print("Enter your choice");
-    int settingschoice = input.nextInt();
-      switch(settingschoice){
-        case 1:
-        System.out.print("---Set 1 Settings---\n 1.Message Center Number\n 2.Message Sent as\n 3. Message Validity");
-        System.out.print("Enter your choice");
-        int set1choice = input.nextInt();
-          switch(set1choice){
-          case 1: System.out.print("7025319560");
-          break;
-          case 2: System.out.print("Text Messages");
-          break;
-          case 3: System.out.print("Message Valid");
-          break;
-          
-          default:
-            System.out.println("Invalid Message Choice");
     
-          }
-          
-        default:
-          System.out.println("Invalid Setting Choice");
-        
-        }
-        
-   break;
-   }
-        case 2: 
-        System.out.println("---Common Settings---\n 1. Delivery Report\n 2.Reply via the same centre\n 3. Character support");
-        System.out.println("Enter your choice");
-        int commonsettingschoice = input.nextInt();
-          switch(commonsettingschoice){
-          case 1: System.out.println("Delivery Successful");
-          break;
-          case 2: System.out.println("ON");
-          break;
-          case 3:System.out.println("ON");
-          break;
-          default:
-            System.out.println("Invalid Common Setting Choice");
+    case 7:
+    System.out.println("---Messages Settings---\n1.Set 1\n2.Common Setting");
+    System.out.println("Enter your choice");
+
+    int settingschoice = input.nextInt();
+
+    switch(settingschoice) {
+
+        case 1:
+            System.out.println("---Set 1 Settings---\n1.Message Center Number\n2.Message Sent as\n3.Message Validity");
+            System.out.println("Enter your choice");
+
+            int set1choice = input.nextInt();
+
+            switch(set1choice) {
+                case 1:
+                    System.out.println("7025319560");
+                    break;
+
+                case 2:
+                    System.out.println("Text Messages");
+                    break;
+
+                case 3:
+                    System.out.println("Message Valid");
+                    break;
+
+                default:
+                    System.out.println("Invalid Message Choice");
+                    break;
+            }
             break;
+
+        case 2:
+            System.out.println("---Common Settings---\n1.Delivery Report\n2.Reply via the same centre\n3.Character support");
+            System.out.println("Enter your choice");
+
+            int commonsettingschoice = input.nextInt();
+
+            switch(commonsettingschoice) {
+                case 1:
+                    System.out.println("Delivery Successful");
+                    break;
+
+                case 2:
+                    System.out.println("ON");
+                    break;
+
+                case 3:
+                    System.out.println("ON");
+                    break;
+
+                default:
+                    System.out.println("Invalid Common Setting Choice");
+                    break;
             }
             break;
 
@@ -123,17 +136,17 @@ int messageschoice = input.nextInt();
             break;
     }
     break;
-        
+    
     case 8:
-        System.out.println("Info Services");
+      System.out.println("Info Services");
         break;
 
     case 9:
-        System.out.println("Voice Mailbox Number");
+      System.out.println("Voice Mailbox Number");
         break;
 
     case 10:
-        System.out.println("Service Command Editor");
+      System.out.println("Service Command Editor");
         break;
     }
     break;
@@ -157,5 +170,4 @@ int messageschoice = input.nextInt();
 
 
 
-        
    
