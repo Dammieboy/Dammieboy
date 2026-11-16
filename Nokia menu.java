@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class NokiaMenu{
+public class Noki5510{
 public static void main(String[] args){
 Scanner input=new Scanner(System.in);
 System.out.println("------MENU FUNCTIONS------\n 1.Phone Book\n 2.Messages\n 3.Chat\n 4.Call Register\n 5.Tones\n 6.Settings\n 7.Call Divert\n 8.Music\n 9.Games\n 10.Calculator\n 11.Reminder\n 12.Clock\n 13.Profile\n 14.Services\n 15.Sim Services\n");
