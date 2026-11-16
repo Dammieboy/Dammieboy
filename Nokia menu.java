@@ -101,7 +101,7 @@ int messageschoice = input.nextInt();
         
    break;
    }
-        case 2:
+        case 2: 
         System.out.println("---Common Settings---\n 1. Delivery Report\n 2.Reply via the same centre\n 3. Character support");
         System.out.println("Enter your choice");
         int commonsettingschoice = input.nextInt();
@@ -145,7 +145,7 @@ int messageschoice = input.nextInt();
     break;
       
     default:
-      System.out.println("Invalid Main Menu Choice")
+      System.out.println("Invalid Main Menu Choice");
       break;
   
 
@@ -156,3 +156,6 @@ int messageschoice = input.nextInt();
 
 
 
+
+        
+   
