@@ -37,21 +37,105 @@ switch(choice){
           case 2: System.out.print("Type of view"); 
           break;
           case 3: System.out.print("Memory Status"); 
-          break;
-          }
           
-    case 10:System.out.println("Speed Dial Successfully"); 
+          default 
+          System.out.print("Invalid Option choice");
+          break;
+          
+        break;
+          }
+               
+    case 10: System.out.println("Speed Dial Successfully"); 
     break;
-    case 11:System.out.println("Voice tags successfully"); break;
+    case 11: System.out.println("Voice tags successfully"); 
+    break;
     
     default:
     System.out.println("Invalid Phone Book Choice");
     break;
-    }
+    
+  break;  
+  }
   
 case 2:
+System.out.println("---Messages Menu---\n 1.Write Messages\n 2.Inbox\n 3.Outbox\n 4.Pictures Messages\n 5.Templates\n 6.Smiley\n 7.Message Settings\n 8.Info Services\n 9.Voice Mailbox number\n 10.Service Command Editor");
+System.out.println("Enter your choice");
+int messageschoice = input.nextInt();
+  switch(messageschoice){
+    case 1: System.out.print("Messages Written"); 
+    break;
+    case 2: System.out.print("Inbox Messages");
+    break;
+    case 3: System.out.print("Outbox Empty");
+    break;
+    case 4: System.out.print("Pictures Messages");
+    break;
+    case 5: System.out.print("Templates Saved");
+    break;
+    case 6: System.out.print("Smiley Sent");
+    break;
+    case 7: 
+    System.out.print("---Messages Settings---\n 1.Set 1\n 2.Common Setting");
+    System.out.print("Enter your choice");
+    int settingschoice = input.nextInt();
+      switch(settingschoice){
+        case 1:
+        System.out.print("---Set 1 Settings---\n 1.Message Center Number\n 2.Message Sent as\n 3. Message Validity");
+        System.out.print("Enter your choice");
+        int set1choice = input.nextInt();
+          switch(set1choice){
+          case 1: System.out.print("7025319560");
+          break;
+          case 2: System.out.print("Text Messages");
+          break;
+          case 3: System.out.print("Message Valid");
+          break;
+          
+          default:
+          System.out.println("Invalid Settings Choice");
+          break;   
+          
+      break;   
+      }
+   
+        case 2:
+        System.out.println("---Common Settings---\n 1. Delivery Report\n 2.Reply via the same centre\n 3. Character support");
+        System.out.println("Enter your choice");
+        int commonsettingschoice = input.nextInt();
+          switch(commonsettingschoice){
+          case 1: System.out.println("Delivery Successful");
+          break;
+          case 2: System.out.println("ON");
+          break;
+          case 3: System.out.println("ON");
+          break;
+        
+          default:
+          System.out.println("Invalid Common Setting choice");
+          break;
+          
+    break;    
+    }
+    
+    
+    case 8:
+        System.out.println("Info Services");
+        break;
 
+    case 9:
+        System.out.println("Voice Mailbox Number");
+        break;
 
+    case 10:
+        System.out.println("Service Command Editor");
+        break;
+
+    default:
+        System.out.println("Invalid Messages Choice");
+        break;
+  
+  break;
+  }
 
 }
 }
