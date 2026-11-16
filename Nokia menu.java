@@ -37,25 +37,23 @@ switch(choice){
           case 2: System.out.print("Type of view"); 
           break;
           case 3: System.out.print("Memory Status"); 
-          
-          default 
-          System.out.print("Invalid Option choice");
           break;
           
+          default:
+          System.out.print("Invalid Option choice");
+          break;  
+        }
         break;
-          }
-               
     case 10: System.out.println("Speed Dial Successfully"); 
     break;
     case 11: System.out.println("Voice tags successfully"); 
     break;
-    
+  
     default:
-    System.out.println("Invalid Phone Book Choice");
-    break;
-    
-  break;  
+      System.out.println("Invalid Phone Book Choice");
+      break;
   }
+  break;
   
 case 2:
 System.out.println("---Messages Menu---\n 1.Write Messages\n 2.Inbox\n 3.Outbox\n 4.Pictures Messages\n 5.Templates\n 6.Smiley\n 7.Message Settings\n 8.Info Services\n 9.Voice Mailbox number\n 10.Service Command Editor");
@@ -92,12 +90,17 @@ int messageschoice = input.nextInt();
           break;
           
           default:
-          System.out.println("Invalid Settings Choice");
-          break;   
+            System.out.println("Invalid Message Choice");
+    
+          }
           
-      break;   
-      }
-   
+        default:
+          System.out.println("Invalid Setting Choice");
+        
+        }
+        
+   break;
+   }
         case 2:
         System.out.println("---Common Settings---\n 1. Delivery Report\n 2.Reply via the same centre\n 3. Character support");
         System.out.println("Enter your choice");
@@ -107,17 +110,20 @@ int messageschoice = input.nextInt();
           break;
           case 2: System.out.println("ON");
           break;
-          case 3: System.out.println("ON");
+          case 3:System.out.println("ON");
           break;
-        
           default:
-          System.out.println("Invalid Common Setting choice");
-          break;
-          
-    break;    
+            System.out.println("Invalid Common Setting Choice");
+            break;
+            }
+            break;
+
+        default:
+            System.out.println("Invalid Setting Choice");
+            break;
     }
-    
-    
+    break;
+        
     case 8:
         System.out.println("Info Services");
         break;
@@ -129,17 +135,24 @@ int messageschoice = input.nextInt();
     case 10:
         System.out.println("Service Command Editor");
         break;
+    }
+    break;
 
     default:
         System.out.println("Invalid Messages Choice");
         break;
+    }
+    break;
+      
+    default:
+      System.out.println("Invalid Main Menu Choice")
+      break;
   
-  break;
-  }
+
+    }
 
 }
 }
-
 
 
 
