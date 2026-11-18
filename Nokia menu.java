@@ -74,10 +74,10 @@ case 2:
     break;
     
     case 7:
-    System.out.println("---Messages Settings---\n1.Set 1\n2.Common Setting");
-    System.out.println("Enter your choice");
+        System.out.println("---Messages Settings---\n1.Set 1\n2.Common Setting");
+        System.out.println("Enter your choice");
 
-    int settingschoice = input.nextInt();
+        int settingschoice = input.nextInt();
 
     switch(settingschoice) {
 
@@ -99,16 +99,12 @@ case 2:
                 case 3:
                     System.out.println("Message Valid");
                     break;
-                    
-                    
-                default:
-                  System.out.println("Invalid Messages Choice");
-                  break;
 
-                }
-                
-}
-break;
+                default:
+                    System.out.println("Invalid Set 1 Choice");
+                    break;
+            }
+            break;
 
         case 2:
             System.out.println("---Common Settings---\n1.Delivery Report\n2.Reply via the same centre\n3.Character support");
@@ -140,7 +136,7 @@ break;
             break;
     }
     break;
-    
+   
     case 8:
       System.out.println("Info Services");
         break;
@@ -153,12 +149,13 @@ break;
       System.out.println("Service Command Editor");
       break;
       
-      default:
-        System.out.println("Invalid Messages Choice");
-        break;
-      }  
-    
-}
+        default:
+            System.out.println("Invalid Messages Choice");
+            break;
+       }
+
+       break;
+
 
 case 3:
     System.out.println("Chat Done");
@@ -169,10 +166,14 @@ case 4:
 				System.out.println("Enter your choice here: ");
 				int callmenu = input.nextInt();
 				switch(callmenu){
-					case 1: System.out.println("\n 7 Missed calls"); break;
-					case 2: System.out.println("\n 5 Received calls"); break;
-					case 3: System.out.println("\n 07025319560\n 08056461194\n 08134567781"); break;
-					case 4: System.out.println("\n Call list Erased Successfully"); break;
+					case 1: System.out.println("\n 7 Missed calls"); 
+					break;
+					case 2: System.out.println("\n 5 Received calls"); 
+					break;
+					case 3: System.out.println("\n 07025319560\n 08056461194\n 08134567781"); 
+					break;
+					case 4: System.out.println("\n Call list Erased Successfully"); 
+					break;
 					case 5:
 						System.out.println("\n---CALL DURATION OPTIONS---\n1.Last call duration\n2.All calls' duration\n3.Received calls' duration\n4.Dialled calls' duration\n5.Clear timers\n");
 						System.out.println("Enter your choice here: ");
@@ -188,12 +189,22 @@ case 4:
 							break;
 							case 5: System.out.println("\n Timers cleared successfully"); 
 							break;
-						}
-						break;
-						  
-						        default:
-                    System.out.println("Invalid Call Register Choice");
+							default:
+                    System.out.println("Invalid Call Duration Choice");
                     break;
+            }
+            break;
+
+				  case 6: System.out.println("Call costs displayed");
+          break;
+          case 7: System.out.println("Call cost settings");
+          break;
+          case 8: System.out.println("Prepaid credit displayed");
+          break;
+          
+          default:
+            System.out.println("Invalid Call Register Choice");
+          break;
 }
 break;
 
@@ -218,9 +229,12 @@ case 5:
 					break;
 					case 8: System.out.println("\n Jpg 1"); 
 					break;
-			
-				}				
-}
+					
+					default:
+            System.out.println("Invalid Tones Choice");
+            break;
+    }
+    break;
 				
 case 6:
 				System.out.println("\n--------SETTINGS MENU------\n1. Call settings\n2. Phone settings\n3. Security settings\n4. Restore factory settings\n");
@@ -246,8 +260,6 @@ case 6:
 							break;
 						}
 						break;
-
-
 							
 					case 2:
 						System.out.println("\n---------PHONE SETTINGS OPTIONS-------\n1.Language\n2.Cell info display\n3.Welcome note\n4.Network selection\n5.Confirm SIM service actions\n");
@@ -285,11 +297,12 @@ case 6:
 							break;
 						}
 						break;
-					case 4: System.out.println("\n Factory reset successful"); 
-					break;
+					  case 4: System.out.println("\n Factory reset successful"); 
+					  break;
 				}
 				break;
-			case 7: System.out.println("\nCall Diverted"); break;
+			case 7: System.out.println("\n Call Diverted"); 
+			break;
 			case 8:
 				System.out.println("\n--------MUSIC MENU------\n1. Music player\n2. Radio\n3. Recorder\n4. Track list\n");
 				System.out.println("Enter your choice here: ");
@@ -320,10 +333,11 @@ case 6:
 					break;
 					case 2: System.out.println("\n CLock set"); 
 					break;
-					case 3: System.out.println("\n Date set"); break;
-					case 4: System.out.println("\nS topwatch started successfully"); 
+					case 3: System.out.println("\n Date set"); 
 					break;
-					case 5: System.out.println("\n countdown started successfully"); 
+					case 4: System.out.println("\nStopwatch started"); 
+					break;
+					case 5: System.out.println("\n countdown started"); 
 					break;
 					case 6: System.out.println("\n Date and Time updated"); 
 					break;
@@ -333,27 +347,17 @@ case 6:
 			break;
 			case 14: System.out.println("\n services contacted successfully"); 
 			break;
-			case 15: System.out.println("\n MTN services contacted successfully"); 
-			break;
-		}
-	}
-}   
-    
+			case 15:
+        System.out.println("\n MTN services contacted successfully");
+      break;
 
-        
-   
 default:
     System.out.println("Invalid Main Menu Choice");
     break;
-  }
 }
-
-  }
+}
+}
   
-  
 
 
 
-
-
-   
